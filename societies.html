@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Societies Organizing Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+   
+        .card-img-top {
+            border-radius: 50%; 
+            block-size: 150px; 
+            inline-size: 150px; 
+            object-fit: cover; 
+            margin: 0 auto; 
+            transition: transform 0.3s ease; 
+        }
+
+        .society-card {
+            text-align: center; 
+        }
+
+     
+        .society-card:hover .card-img-top {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">CUI WAH Student Week</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active" href="societies.html">Societies</a></li>
+                <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
+            </ul>
+            <button type="button" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                Register Now
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          
+            <div class="modal-header" style="background-color: #023047; color: #FFB703;">
+                <h5 class="modal-title" id="registrationModalLabel">Register for COMSATS Student Week</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: brightness(0) invert(1);"></button>
+            </div>
+        
+            <div class="modal-body">
+                <form id="registrationForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div> 
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number" required>
+                    </div>
+                
+                     <div class="mb-3">
+                        <label for="event" class="form-label">Select Event</label>
+                        <select class="form-select" id="event" required>
+                            <option selected disabled>Select event</option>
+                            <option value="Olympics">Olympics</option>
+                            <option value="Pet Show">Pet Show</option>
+                            <option value="Cultural Day">Cultural Day</option>
+                            <option value="Girls Fiesta">Girls Fiesta</option>
+                            <option value="Cricket">Cricket</option>
+                            <option value="Basket Ball">Basket Ball</option>
+                            <option value="Escape Room">Escape Room</option>
+                            <option value="Squid Game">Squid Game</option>
+                            <option value="Puzzle Fuzzle">Puzzle Fuzzle</option>
+                            <option value="Badminton">Badminton</option>
+                            <option value="Wooden Jenga">Wooden Jenga</option>
+                            <option value="Spoon Race">Spoon Race</option>
+                            <option value="Trust Walk">Trust Walk</option>
+                            <option value="Real World Problem Quiz">Real World Problem Quiz</option>
+                            <option value="Kedi Kedi">Kedi Kedi</option>
+                            <option value="Buggle Word Finding">Buggle Word Finding</option>
+                        </select>
+                    </div>
+                </form>
+            </div> 
+       
+            <div class="modal-footer" style="background-color: #023047;">
+                <button type="submit" class="btn btn-primary" style="background-color: #FB8500; border-color: #FB8500;">Submit</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<section id="societies" class="container my-5 flex-grow-1">
+    <h2 class="text-center">Societies Organizing Events</h2>
+    <div class="row mt-4">
+       
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="busniess1.png" class="card-img-top" alt="Student Startup Business Society">
+                <div class="card-body">
+                    <h5 class="card-title">Student Startup Business Society (SSBS)</h5>
+                    <p class="card-text">Fostering entrepreneurship and innovation among students through workshops and startup events.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="sports.jpg" class="card-img-top" alt="COMSATS Sports Society">
+                <div class="card-body">
+                    <h5 class="card-title">COMSATS Sports Society (CSS)</h5>
+                    <p class="card-text">Promoting fitness and teamwork through various sports events and activities.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="acm.jpg" class="card-img-top" alt="ACM">
+                <div class="card-body">
+                    <h5 class="card-title">ACM-Student Chapter</h5>
+                    <p class="card-text">Empowering students in computing through competitions, workshops, and tech events.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="ieee.jpg" class="card-img-top" alt="IEEE Student Branch">
+                <div class="card-body">
+                    <h5 class="card-title">IEEE Student Branch</h5>
+                    <p class="card-text">Connecting students with industry professionals through seminars and technical events.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="li.jpg" class="card-img-top" alt="Literature Society">
+                <div class="card-body">
+                    <h5 class="card-title">Literature Society</h5>
+                    <p class="card-text">Encouraging literary pursuits and creativity through readings, workshops, and discussions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="culture.jpg" class="card-img-top" alt="Cultural Society">
+                <div class="card-body">
+                    <h5 class="card-title">Cultural Society</h5>
+                    <p class="card-text">Promoting the rich cultural heritage through events and activities that showcase our traditions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="seerat.jpg" class="card-img-top" alt="Seerat Society">
+                <div class="card-body">
+                    <h5 class="card-title">Seerat Society</h5>
+                    <p class="card-text">Promoting moral and ethical values through discussions and events that reflect the teachings of Seerat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="ice.jpg" class="card-img-top" alt="ICE Society">
+                <div class="card-body">
+                    <h5 class="card-title">ICE Society</h5>
+                    <p class="card-text">Fostering innovation and creativity among students through tech workshops and collaborative projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card society-card">
+                <img src="comecs.jpg" class="card-img-top" alt="COMSATS">
+                <div class="card-body">
+                    <h5 class="card-title">COMECS</h5>
+                    <p class="card-text">A hub for students to engage in various academic and extracurricular activities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

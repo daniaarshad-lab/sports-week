@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | CUI WAH Student Week</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .event-card {
+            transition: transform 0.3s ease;
+        }
+        .event-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">CUI WAH Student Week</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="societies.html">Societies</a></li>
+                <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
+                <a class="nav-link" href="#CONTACT">Contact Us</a>
+            </ul>
+            <button type="button" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#registrationModal">Register Now</button>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #023047; color: #FFB703;">
+                <h5 class="modal-title" id="registrationModalLabel">Register for COMSATS Student Week</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: brightness(0) invert(1);"></button>
+            </div>
+            <div class="modal-body">
+                <form id="registrationForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div> 
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number" required>
+                    </div>
+
+                     <div class="mb-3">
+                        <label for="event" class="form-label">Select Event</label>
+                        <select class="form-select" id="event" required>
+                            <option selected disabled>Select event</option>
+                            <option value="Olympics">Olympics</option>
+                            <option value="Pet Show">Pet Show</option>
+                            <option value="Cultural Day">Cultural Day</option>
+                            <option value="Girls Fiesta">Girls Fiesta</option>
+                            <option value="Cricket">Cricket</option>
+                            <option value="Basket Ball">Basket Ball</option>
+                            <option value="Escape Room">Escape Room</option>
+                            <option value="Squid Game">Squid Game</option>
+                            <option value="Puzzle Fuzzle">Puzzle Fuzzle</option>
+                            <option value="Badminton">Badminton</option>
+                            <option value="Wooden Jenga">Wooden Jenga</option>
+                            <option value="Spoon Race">Spoon Race</option>
+                            <option value="Trust Walk">Trust Walk</option>
+                            <option value="Real World Problem Quiz">Real World Problem Quiz</option>
+                            <option value="Kedi Kedi">Kedi Kedi</option>
+                            <option value="Buggle Word Finding">Buggle Word Finding</option>
+                        </select>
+                    </div>
+                </form>
+            </div> 
+
+            <div class="modal-footer" style="background-color: #023047;">
+                <button type="submit" class="btn btn-primary" style="background-color: #FB8500; border-color: #FB8500;">Submit</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+ <section id="events" class="container my-5">
+    <h2 class="text-center">Events</h2>
+    <br>
+    <br>
+    <div class="row">
+       <!-- PUBG Event -->
+       <div class="col-md-4">
+        <div class="card event-card mb-4">
+            <img src="pubg.jpeg" class="card-img-top" alt="PUBG">
+            <div class="card-body">
+                <h5 class="card-title">PUBG</h5>
+                <p class="card-text">The grand opening of COMSATS Student Week with speeches and performances.</p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pubgDetails" aria-expanded="false" aria-controls="pubgDetails">
+                    View Details
+                </button>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerPUBG">
+                    Register Now
+                </button>
+                <div class="collapse" id="pubgDetails">
+                    <div class="card card-body mt-3">
+                        <p><strong>Date & Time:</strong> March 20th, 2024, 10:00 AM - 12:00 PM</p>
+                        <p><strong>Organizer:</strong> Sarah Ahmed</p>
+                        <p><strong>Venue:</strong> COMSATS Auditorium</p>
+                        <p>Join us for the opening ceremony featuring guest speakers, musical performances, and the official kickoff of the Student Week.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PUBG Registration Modal -->
+    <div class="modal fade" id="registerPUBG" tabindex="-1" aria-labelledby="registerPUBGLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerPUBGLabel">Register for PUBG Event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="namePUBG" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="namePUBG" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailPUBG" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailPUBG" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="teamNamePUBG" class="form-label">Team Name (Optional)</label>
+                            <input type="text" class="form-control" id="teamNamePUBG">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- Olympics Event -->
+       <div class="col-md-4">
+        <div class="card event-card mb-4">
+            <img src="olympics.jpeg" class="card-img-top" alt="Olympics">
+            <div class="card-body">
+                <h5 class="card-title">Olympics</h5>
+                <p class="card-text">An event featuring various sports challenges, promoting teamwork and fitness.</p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#olympicsDetails" aria-expanded="false" aria-controls="olympicsDetails">
+                    View Details
+                </button>
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerOlympics">
+                    Register Now
+                </button>
+                <div class="collapse" id="olympicsDetails">
+                    <div class="card card-body mt-3">
+                        <p><strong>Date & Time:</strong> October 7th, 2024, 1:00 PM - 3:00 PM</p>
+                        <p><strong>Organizer:</strong> IEEE</p>
+                        <p><strong>Venue:</strong> COMSATS Sports Complex</p>
+                        <p>The Olympics event will feature several sports competitions, including relay races, tug-of-war, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Olympics Registration Modal -->
+    <div class="modal fade" id="registerOlympics" tabindex="-1" aria-labelledby="registerOlympicsLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerOlympicsLabel">Register for Olympics Event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameOlympics" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameOlympics" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailOlympics" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailOlympics" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sportOlympics" class="form-label">Sport</label>
+                            <input type="text" class="form-control" id="sportOlympics" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+           <!-- Girls Fiesta Event  -->
+           <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="see.jpeg" class="img-fluid mb-3" alt="Naat Competition">
+                <div class="card-body">
+                    <h5 class="card-title">Naat Competition</h5>
+                    <p class="card-text">A fun day dedicated to celebrating the creativity and talents of female students.</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#naatCompetitionDetails" aria-expanded="false" aria-controls="naatCompetitionDetails">
+                        View Details
+                    </button>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerNaatCompetition">
+                        Register Now
+                    </button>
+                    <div class="collapse" id="naatCompetitionDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> October 8th, 2024, 11:00 AM - 4:00 PM</p>
+                            <p><strong>Organizer:</strong> ACM</p>
+                            <p><strong>Venue:</strong> Room #501</p>
+                            <p>Includes fashion shows, creative contests, and activities for all girls.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Naat Competition Registration Modal -->
+        <div class="modal fade" id="registerNaatCompetition" tabindex="-1" aria-labelledby="registerNaatCompetitionLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registerNaatCompetitionLabel">Register for Naat Competition</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nameNaat" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="nameNaat" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailNaat" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailNaat" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="collegeNaat" class="form-label">Team Name optional</label>
+                                <input type="text" class="form-control" id="collegeNaat" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Speak and Shine Event -->
+         <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="om.jpeg" class="card-img-top" alt="Speak and Shine">
+                <div class="card-body">
+                    <h5 class="card-title">Speak and Shine</h5>
+                    <p class="card-text">A public speaking event that encourages confidence and eloquence.</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#speakAndShineDetails" aria-expanded="false" aria-controls="speakAndShineDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="speakAndShineDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 23rd, 2024, 2:00 PM - 5:00 PM</p>
+                            <p><strong>Organizer:</strong> Ahmed Khan</p>
+                            <p><strong>Venue:</strong> COMSATS Auditorium</p>
+                            
+                            <p>Students will compete by delivering inspirational speeches on various topics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div> 
+
+        <!-- Auto Show Event -->
+        <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="mn.jpeg" class="card-img-top" alt="Auto Show">
+                <div class="card-body">
+                    <h5 class="card-title">Auto Show</h5>
+                    <p class="card-text">Showcasing the gaming talent.</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#autoShowDetails" aria-expanded="false" aria-controls="autoShowDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="autoShowDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 24th, 2024, 9:00 AM - 3:00 PM</p>
+                            <p><strong>Organizer:</strong> Sarah</p>
+                            <p><strong>Venue:</strong> ROOM 501</p>
+                           
+                            <p>The event will feature car enthusiasts showcasing their vehicles, including modified cars, motorcycles, and vintage cars.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- Pet Show Event -->
+        <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="ps.jpeg" class="card-img-top" alt="Pet Show">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Show</h5>
+                    <p class="card-text">Show off your pets in this fun and interactive event!</p>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#petShowDetails" aria-expanded="false" aria-controls="petShowDetails">
+                            View Details
+                        </button>
+                    </button>
+                    <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    </div>
+                    <div class="collapse" id="petShowDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 21st, 2024, 1:00 PM - 4:00 PM</p>
+                            <p><strong>Organizer:</strong> Zara Ali</p>
+                            <p><strong>Venue:</strong> COMSATS Courtyard</p>
+                            <p>Bring your pets and participate in fun contests!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+         <!-- Squid Game Event  -->
+      <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="sg.jpeg" class="card-img-top" alt="Squid Game">
+                <div class="card-body">
+                    <h5 class="card-title">Squid Game</h5>
+                    <p class="card-text">A fun twist on the popular game with exciting challenges!</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#squidGameDetails" aria-expanded="false" aria-controls="squidGameDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="squidGameDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 25th, 2024, 2:00 PM - 5:00 PM</p>
+                            <p><strong>Organizer:</strong> Ayesha Mehmood</p>
+                            <p><strong>Venue:</strong> COMSATS Sports Ground</p>
+                           
+                            <p>Join the challenges inspired by the famous show in a friendly environment!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+ 
+       <!-- Puzzle Event  -->
+       <div class="col-md-4"> 
+        <div class="card event-card mb-4">
+              <img src="pf.jpeg" class="card-img-top" alt="Olympics">
+              <div class="card-body">
+                  <h5 class="card-title">Puzzle </h5>
+                  <p class="card-text">An event featuring various sports challenges, promoting teamwork and fitness.</p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#olympicsDetails" aria-expanded="false" aria-controls="olympicsDetails">
+                      View Details
+                  </button>
+              </button>
+              <button class="btn btn-success" onclick="window.location.href='registration.html?event=Olympics'">Register Now</button>
+                  <div class="collapse" id="olympicsDetails">
+                      <div class="card card-body mt-3">
+                          <p><strong>Date & Time:</strong> Octobor 7th, 2024, 1:00 AM - 3:00 PM</p>
+                          <p><strong>Organizer:</strong> IEEE</p>
+                          <p><strong>Venue:</strong> COMSATS Sports Complex</p>
+                        
+                          <p>The Olympics event will feature several sports competitions, including relay races, tug-of-war, and more.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> 
+<!-- Girls Fiesta Event  -->
+      <div class="col-md-4">
+          <div class="card event-card mb-4">
+              <img src="gf.jpeg" class="img-fluid mb-3" alt="Speak and Shine">
+              <div class="card-body">
+                  <h5 class="card-title">Girls Fiesta</h5>
+                  <p class="card-text">A fun day dedicated to celebrating the creativity and talents of female students.</p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#girlsFiestaDetails" aria-expanded="false" aria-controls="girlsFiestaDetails">
+                      View Details
+                  </button>
+              </button>
+              <button class="btn btn-success" onclick="window.location.href='registration.html?event=Girls Fiesta'">Register Now</button>
+                  <div class="collapse" id="girlsFiestaDetails">
+                      <div class="card card-body mt-3">
+                          <p><strong>Date & Time:</strong> October 8nd, 2024, 11:00 AM - 4:00 PM</p>
+                          <p><strong>Organizer:</strong> ACM</p>
+                          <p><strong>Venue:</strong> Room #501 </p>
+                        
+                          <p>Includes fashion shows, creative contests, and activities for all girls.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>  
+      
+        <!-- < Badminton Event --> 
+         <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="ff.jpeg" class="card-img-top" alt="Badminton">
+                <div class="card-body">
+                    <h5 class="card-title">Fitness Follies</h5>
+                    <p class="card-text">Challenge your friends in a Fitness match!</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#badmintonDetails" aria-expanded="false" aria-controls="badmintonDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="badmintonDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 26th, 2024, 1:00 PM - 3:00 PM</p>
+                            <p><strong>Organizer:</strong> Sara Yousuf</p>
+                            <p><strong>Venue:</strong> COMSATS Indoor Hall</p>
+                            
+                            <p>Compete in singles or doubles matches for prizes!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- < Cricket Event  -->
+        <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="cricket.jpeg" class="card-img-top" alt="Cricket">
+                <div class="card-body">
+                    <h5 class="card-title">Cricket</h5>
+                    <p class="card-text">Join the cricket tournament and showcase your talent!</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#cricketDetails" aria-expanded="false" aria-controls="cricketDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="cricketDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 27th, 2024, 10:00 AM - 5:00 PM</p>
+                            <p><strong>Organizer:</strong> Ahmed Malik</p>
+                            <p><strong>Venue:</strong> COMSATS Cricket Ground</p>
+                           
+                            <p>Get your team together and compete for the cricket cup!</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div> 
+
+        <!-- < Wooden Jenga Event  -->
+         <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="wj.jpeg" class="card-img-top" alt="Wooden Jenga">
+                <div class="card-body">
+                    <h5 class="card-title">Wooden Jenga</h5>
+                    <p class="card-text">Test your balance and strategy in this fun game!</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#woodenJengaDetails" aria-expanded="false" aria-controls="woodenJengaDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="woodenJengaDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 28th, 2024, 12:00 PM - 3:00 PM</p>
+                            <p><strong>Organizer:</strong> Saima Niazi</p>
+                            <p><strong>Venue:</strong> COMSATS Main Hall</p>
+                          
+                            <p>Join us for an exciting Jenga competition! Who will be the last player standing?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- <Spoon Race Competition Event --> 
+        <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="sr.jpeg" class="card-img-top" alt="Spoon Race Competition">
+                <div class="card-body">
+                    <h5 class="card-title">Spoon Race Competition</h5>
+                    <p class="card-text">A fun relay race that tests your speed and coordination!</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#spoonRaceDetails" aria-expanded="false" aria-controls="spoonRaceDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="spoonRaceDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 28th, 2024, 3:00 PM - 5:00 PM</p>
+                            <p><strong>Organizer:</strong> Aalia Ahmed</p>
+                            <p><strong>Venue:</strong> COMSATS Sports Ground</p>
+                            
+                            <p>Grab your spoons and balance those eggs! Prizes for the fastest teams!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+          <!-- <Spoon Race Competition Event --> 
+          <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="tw.jpeg" class="card-img-top" alt="FootBall">
+                <div class="card-body">
+                    <h5 class="card-title">Trust Walk</h5>
+                    <p class="card-text">A fun relay race that tests your speed and coordination!</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#spoonRaceDetails" aria-expanded="false" aria-controls="spoonRaceDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="spoonRaceDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 28th, 2024, 3:00 PM - 5:00 PM</p>
+                            <p><strong>Organizer:</strong> Aalia Ahmed</p>
+                            <p><strong>Venue:</strong> COMSATS Sports Ground</p>
+                           
+                            <p>Grab your spoons and balance those eggs! Prizes for the fastest teams!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Games (e.g., Squid Game, Puzzle Fuzzle, etc.) -->
+         <div class="col-md-4">
+            <div class="card event-card mb-4">
+                <img src="rw.jpeg" class="card-img-top" alt="Games">
+                <div class="card-body">
+                    <h5 class="card-title">Real Word Quiz Problem</h5>
+                    <p class="card-text">Participate in thrilling games like Squid Game, Puzzle Fuzzle, and more.</p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#gamesDetails" aria-expanded="false" aria-controls="gamesDetails">
+                        View Details
+                    </button>
+                </button>
+                <button class="btn btn-success" onclick="window.location.href='registration.html?event=openingCeremony'">Register Now</button>
+                    <div class="collapse" id="gamesDetails">
+                        <div class="card card-body mt-3">
+                            <p><strong>Date & Time:</strong> March 25th, 2024, 12:00 PM - 6:00 PM</p>
+                            <p><strong>Organizer:</strong> Bilal Ahmed</p>
+                            <p><strong>Venue:</strong> COMSATS Game Zone</p>
+                           
+                            <p>Enjoy competitive and fun game, by solving real word quiz problem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+body {
+    background-color: #F5F5F5;
+    color: #1E1F26; 
+    font-family: 'Arial', sans-serif;
+}
+
+
+.navbar-custom {
+    background-color: #023047; 
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-custom .navbar-brand {
+    color: #FFB703; 
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-custom .nav-link {
+    color: #8ECAE6; 
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-inline-end: 15px;
+    position: relative;
+}
+
+.navbar-custom .nav-link::after {
+    content: '';
+    position: absolute;
+    inline-size: 0;
+    block-size: 2px;
+    background-color: #FFB703; 
+    inset-inline-start: 0;
+    inset-block-end: -4px;
+    transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover::after {
+    inline-size: 100%;
+}
+
+.navbar-custom .btn-register {
+    background-color: #FB8500; 
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(251, 133, 0, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-custom .btn-register:hover {
+    background-color: #219EBC; /* Sky Blue */
+    box-shadow: 0 0 15px rgba(33, 158, 188, 0.5);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 0;
+    block-size: 100vh;
+}
+
+.section-home {
+    background-color: #8ECAE6;
+}
+
+.section-about {
+    background-color: #219EBC;
+}
+
+.section-events {
+    background-color: #023047;
+    color: white;
+}
+
+.section-past-events {
+    background-color: #FFB703;
+}
+
+.section-contact {
+    background-color: #FB8500;
+}
+
+.navbar {
+    font-family: 'Oswald', sans-serif; 
+    font-weight: bold; 
+}
+
+
+@media (max-width: 991px) {
+    .navbar-custom .nav-link {
+        margin-inline-end: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-custom {
+        padding: 10px 15px; 
+    }
+
+    .navbar-custom .navbar-brand {
+        font-size: 1.5rem; 
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 1rem; 
+    }
+}
+
+.btn-primary {
+    background-color: #FF5722; 
+    border-color: #FF5722;
+}
+
+.btn-primary:hover {
+    background-color: #E64A19; 
+}
+
+.btn-success {
+    background-color: #8BC34A; 
+    border-color: #8BC34A;
+}
+
+.btn-success:hover {
+    background-color: #7CB342; 
+}
+
+.card {
+    border: none;
+    background-color: white;
+}
+
+.card-title {
+    color: #FF5722; 
+}
+
+.card-body p {
+    color: #1E1F26; 
+}
+
+.event-card {
+    border: 2px solid #2196F3; 
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+footer {
+    background-color: #2196F3; 
+    color: white;
+    padding: 1.5rem 0;
+}
+
+footer a {
+    color: #FF5722; 
+}
+
+input, textarea {
+    border: 2px solid #8BC34A; 
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #FF5722; 
+}
+
+.modal-header, .modal-footer {
+    background-color: #2196F3; 
+    color: white;
+}
+
+.modal-title {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 2rem 1rem;
+    }
+
+    .section-about, .section-events, .section-past-events, .section-contact {
+        padding: 40px 15px; 
+    }
+
+    .card {
+        margin: 0 15px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-custom .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 0.9rem; 
+    }
+
+    .section-about h1, .section-about h2 {
+        font-size: 1.5rem; 
+    }
+
+    .section-about p {
+        font-size: 0.9rem; 
+    }
+
+    #contactus {
+        inline-size: 100%; 
+        padding: 1rem; 
+    }
+
+    #contact-form {
+        gap: 0.5rem; 
+    }
+}
+.about-image {
+    border: 5px solid #004aad; 
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.jumbotron {
+    background-color: #FF5722; 
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: white;
+}
